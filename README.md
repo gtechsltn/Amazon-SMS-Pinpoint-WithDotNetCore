@@ -18,6 +18,7 @@ Additional Point: Go to Test Message from Navigation Pane in Pinpoint Project, t
 
 You just need to create new policy under IAM section and copy following JSON code in the JSON Editor.
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -40,6 +41,9 @@ You just need to create new policy under IAM section and copy following JSON cod
         }
     ]
 }
+
+```
+
 Above JSON code will give you permission to send email. you can refer to Amazon Pinpoint Developer Guide for changes there but for this tutorial, you can tweak JSON in order to get your hands dirty with permissions.
 
 Once this policy is ready, next step is to attach the policy to the group (group that you created in STEP 16)
